@@ -1,9 +1,16 @@
-# therapychannel
+# Therapy Channel
+
+### About
 Therapy Channel allows you find therapists at your location and book a online appointment with them. you will get a reminder before the booking starts and you will be able to chat and video call them. Furthermore, there will be a anonymous venting chat where you can express freely and another random person will be there to listen to you. Moreover, you can rate a therapist and also tell about how your experience has been so others can know.  Moreover, people will be able to find a certain problem and share how they solved the problem so others can learn too.
 
 
+<span>
+<h2>Requirements<h2>
+Look at detailed requirements below or "Customer UseCase.pdf"
+</span>
 
 Patient Requirements:
+
 1. Register
 2. Login
 3. View My calender to see appointments. Five minutes before each appointment, you get a notification. (Time can be changed from setting)
