@@ -1,8 +1,0 @@
-{
-  "name": "therapychannel",
-  "version": "0.1.0",
-  "scripts": {
-    "postinstall": "cd backend && npm install",
-	"start": "cd backend && node index.js"
-  }
-}
