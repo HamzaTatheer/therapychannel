@@ -1,0 +1,67 @@
+post http://localhost:5000/registerPatient
+content-type: application/json
+
+{
+  "name":"admin2",
+  "email":"admin2@gmail.com",
+  "role":"patient",
+  "password":"123456",
+  "city":"lahore",
+  "country":"Pakistan",
+  "gender":"male",
+  "dob":{
+    "day":"20",
+    "month":"2",
+    "year":"2001"
+  }
+}
+
+###
+post http://localhost:5000/registerTherapist
+content-type: application/json
+
+{
+  "name":"alex",
+  "email":"alex@gmail.com",
+  "password":"123456",
+  "city":"lahore",
+  "country":"Pakistan",
+  "gender":"male",
+  "dob":{
+    "day":"20",
+    "month":"2",
+    "year":"2001"
+  },
+  "user_data":{
+    "description":"hello i am therapist",
+    "experience":"3",
+    "therapistType":"family",
+    "currency":"dollars",
+    "charges":"5"
+  }
+
+
+}
+
+
+###
+post http://localhost:9000/login
+content-type: application/json
+
+{
+  "email":"admin@gmail.com",
+  "password":"123456"
+}
+
+
+###
+get http://localhost:5000/test1
+
+content-type: application/json
+
+{
+  "day":23,
+  "month":9,
+  "year":2020,
+  "zone":"Asia/Karachi"
+}
