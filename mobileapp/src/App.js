@@ -10,8 +10,11 @@ import {
   Button,
 } from 'react-native';
 import {DefaultTheme, Provider as PaperProvider} from 'react-native-paper';
+import configureStore from './store/configureStore';
+import Login from './screens/login/login';
+import { Provider } from 'react-redux';
 
-import Login from './Screens/login/login';
+const store = configureStore();
 
 const theme = {
   ...DefaultTheme,
@@ -28,9 +31,11 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={{flex:1}}>
         <PaperProvider theme={theme}>
+          <Provider store={store}>
           <Login />
+          </Provider>
         </PaperProvider>
       </SafeAreaView>
     </>
