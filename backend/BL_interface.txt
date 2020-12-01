@@ -1,0 +1,10 @@
+Patient
+login(string email,string password)
+register(email,password,gender,dob,city,country)
+
+
+
+
+
+Therapist
+//to be done
