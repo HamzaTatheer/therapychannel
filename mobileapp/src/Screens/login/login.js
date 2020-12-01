@@ -7,17 +7,28 @@ const Login = () => {
   const [passwordInput, setPasswordInput] = useState('');
 
   return (
-    <View style={{height: 100, width: 300, backgroundColor: 'yellow'}}>
+    <View style={{height: 100, backgroundColor: 'yellow'}}>
       <TextInput
-        style={{height: 100, width: 100}}
+        style={{height: 100}}
         label="Email"
         value={emailInput}
-        onChangeText={(emailInput) => setText(emailInput)}
+        onChangeText={(emailInput) => setEmailInput(emailInput)}
+      />
+      <TextInput
+        style={{height: 100}}
+        label="Password"
+        value={passwordInput}
+        onChangeText={(passwordInput) => setPasswordInput(passwordInput)}
       />
       <TouchableOpacity
         style={styles.button}
         onPress={() => console.log('hello world')}>
-        <Text>Press Here</Text>
+        <Text>Sign In</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => console.log('hello world')}>
+        <Text>Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
